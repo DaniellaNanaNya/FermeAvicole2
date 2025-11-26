@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>VOLAILLE D'OR</title>
+    <link rel="stylesheet" href="FermeAvicole.css">
+     <style>
+        body {
+            background-image: url("FermeAvicole.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-color: #4f041c; 
+            background-attachment: fixed;
+           
+        }
+    </style>
+
+
+<header>
+    <div class="title"> 
+    <h1>VOLAILLE D'OR</h1>
+</div>
+    <nav class="menu-header">
+        <a href="FermeAvicole.html" class="btn">ACCUEIL</a>
+        <a href="NosProduitsFerme.html" class="btn">NOS PRODUITS</a>
+        <a href="ServicesFerme.html" class="btn">NOS SERVICES</a>
+        <a href="NousContacterFerme.html" class="btn">CONTACT</a>
+    </nav>
+</header>
+
+<section class="hero">
+<h1>VOLAILLE D'OR</h1>
+<p>Bienvenue chez nous, où l’œuf camerounais atteint son plus haut niveau de qualité.</p>
+</section>
+
+
+<section id="nos-produits" class="produits-catalogue">
+    <h2>Nos Produits</h2>
+
+    <div class="catalogue-wrapper">
+
+        <!-- Sidebar gauche -->
+        <aside class="sidebar">
+            <h3>Filtrer par catégorie</h3>
+            <ul>
+                <li><a href="#" onclick="filterProducts('all'); return false;">Tous</a></li>
+                <li><a href="#" onclick="filterProducts('petite-famille'); return false;">Petite famille</a></li>
+                <li><a href="#" onclick="filterProducts('foyer-moyen'); return false;">Foyer moyen</a></li>
+                <li><a href="#" onclick="filterProducts('restaurant'); return false;">Restaurant / marché</a></li>
+            </ul>
+
+            <h3>Filtrer par prix</h3>
+            <ul>
+                <li><a href="#" onclick="filterPrice(0,5000); return false;">Moins de 5 000 FCFA</a></li>
+                <li><a href="#" onclick="filterPrice(5000,15000); return false;">5 000 à 15 000 FCFA</a></li>
+                <li><a href="#" onclick="filterPrice(15000,999999); return false;">Plus de 15 000 FCFA</a></li>
+            </ul>
+        </aside>
+
+        <!-- Catalogue produits -->
+        <div class="catalogue-container">
+
+            <!-- Petite famille -->
+            <div class="produit-carte" data-categorie="petite-famille" data-prix="5000">
+                <div class="badge">Pack famille</div>
+                <div class="images-pack">
+                    <img src="oeufs6.jpg" alt="">
+                    <img src="oeufs6.jpg" alt="">
+                </div>
+                <h3>2 x 6 œufs</h3>
+                <p>Pratique pour 1-2 personnes.</p>
+                <a href="#" class="btn-commande">Commander</a>
+            </div>
+
+            <div class="produit-carte" data-categorie="petite-famille" data-prix="7000">
+                <div class="badge">Pack famille</div>
+                <div class="images-pack">
+                    <img src="oeufs6.jpg" alt="">
+                    <img src="oeufs6.jpg" alt="">
+                    <img src="oeufs6.jpg" alt="">
+                </div>
+                <h3>3 x 6 œufs</h3>
+                <p>Stockage 1 semaine pour petite famille.</p>
+                <a href="#" class="btn-commande">Commander</a>
+            </div>
+
+            <!-- Foyer moyen -->
+            <div class="produit-carte" data-categorie="foyer-moyen" data-prix="12000">
+                <div class="badge">Pack famille</div>
+                <div class="images-pack">
+                    <img src="oeufs12.jpg" alt="">
+                    <img src="oeufs12.jpg" alt="">
+                </div>
+                <h3>2 x 12 œufs</h3>
+                <p>Idéal pour foyers moyens.</p>
+                <a href="#" class="btn-commande">Commander</a>
+            </div>
+
+            <div class="produit-carte" data-categorie="foyer-moyen" data-prix="18000">
+                <div class="badge">Pack famille</div>
+                <div class="images-pack">
+                    <img src="oeufs12.jpg" alt="">
+                    <img src="oeufs12.jpg" alt="">
+                    <img src="oeufs12.jpg" alt="">
+                </div>
+                <h3>3 x 12 œufs</h3>
+                <p>Pour la semaine ou événements familiaux.</p>
+                <a href="#" class="btn-commande">Commander</a>
+            </div>
+
+            <!-- Restaurant -->
+            <div class="produit-carte" data-categorie="restaurant" data-prix="45000">
+                <div class="badge">Restaurant</div>
+                <div class="images-pack">
+                    <img src="oeufs30.jpg" alt="">
+                    <img src="oeufs30.jpg" alt="">
+                    <img src="oeufs30.jpg" alt="">
+                </div>
+                <h3>3 x 30 œufs</h3>
+                <p>Pour petits commerces ou cantines.</p>
+                <a href="#" class="btn-commande">Commander</a>
+            </div>
+
+            <div class="produit-carte" data-categorie="restaurant" data-prix="75000">
+                <div class="badge">Restaurant</div>
+                <div class="images-pack">
+                    <img src="oeufs30.jpg" alt="">
+                    <img src="oeufs30.jpg" alt="">
+                    <img src="oeufs30.jpg" alt="">
+                    <img src="oeufs30.jpg" alt="">
+                    <img src="oeufs30.jpg" alt="">
+                </div>
+                <h3>5 x 30 œufs</h3>
+                <p>Livraison pour restaurants ou événements.</p>
+                <a href="#" class="btn-commande">Commander</a>
+            </div>
+
+            <div class="produit-carte" data-categorie="restaurant" data-prix="150000">
+                <div class="badge">Restaurant</div>
+                <div class="images-pack">
+                    <img src="oeufs30.jpg" alt="">
+                    <img src="oeufs30.jpg" alt="">
+                    <img src="oeufs30.jpg" alt="">
+                    <img src="oeufs30.jpg" alt="">
+                    <img src="oeufs30.jpg" alt="">
+                    <img src="oeufs30.jpg" alt="">
+                    <img src="oeufs30.jpg" alt="">
+                    <img src="oeufs30.jpg" alt="">
+                    <img src="oeufs30.jpg" alt="">
+                    <img src="oeufs30.jpg" alt="">
+                </div>
+                <h3>10 x 30 œufs</h3>
+                <p>Pour marchés ou grossistes.</p>
+                <a href="#" class="btn-commande">Commander</a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    
+
+
+
+
+
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+<br></br>
+
+
+<footer>
+<p>© POULE D'OR · Tous droits réservés</p>
+</footer>
+<script>
+    function filterProducts(categorie) {
+        const produits = document.querySelectorAll('.produit-carte');
+    
+        produits.forEach(produit => {
+            const cat = produit.dataset.categorie;
+    
+            if (categorie === 'all' || cat === categorie) {
+                produit.style.display = 'block';
+            } else {
+                produit.style.display = 'none';
+            }
+        });
+    }
+    
+    function filterPrice(min, max) {
+        const produits = document.querySelectorAll('.produit-carte');
+    
+        produits.forEach(produit => {
+            const prix = parseInt(produit.dataset.prix);
+    
+            if (prix >= min && prix <= max) {
+                produit.style.display = 'block';
+            } else {
+                produit.style.display = 'none';
+            }
+        });
+    }
+    </script>
+</body>
+</html>
